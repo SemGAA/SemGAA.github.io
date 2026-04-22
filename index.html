@@ -6,7 +6,7 @@
     <title>SemGAA - Fullstack Developer & Android Enthusiast</title>
     <meta
       name="description"
-      content="Portfolio SemGAA: Android, Laravel, Livewire, Java, Minecraft Forge and business automation projects."
+      content="Portfolio SemGAA: Android, Laravel, Livewire, Java, Minecraft Forge, SQL and business automation projects."
     />
     <link rel="stylesheet" href="./styles.css" />
   </head>
@@ -15,8 +15,9 @@
       <a class="brand" href="#top">SemGAA</a>
       <nav class="nav" aria-label="Основная навигация">
         <a href="#projects">Проекты</a>
+        <a href="#details">Детали</a>
         <a href="#stack">Стек</a>
-        <a href="https://github.com/SemGAA">GitHub</a>
+        <a href="#contact">Контакты</a>
       </nav>
     </header>
 
@@ -26,106 +27,220 @@
           <p class="eyebrow">Junior / Intern ready portfolio</p>
           <h1>Fullstack Developer & Android Enthusiast</h1>
           <p class="lead">
-            Автоматизирую процессы, собираю Android-интерфейсы и люблю нестандартные задачи: от корпоративного документооборота до модов с событийной логикой.
+            Специализируюсь на автоматизации процессов и нестандартных решениях:
+            от Android-приложений и Laravel-порталов до игровых механик на Forge.
           </p>
           <div class="hero__actions">
             <a class="button button--primary" href="#projects">Смотреть проекты</a>
-            <a class="button" href="https://github.com/SemGAA">Открыть GitHub</a>
+            <a class="button" href="https://github.com/SemGAA">GitHub профиль</a>
           </div>
         </div>
 
-        <div class="hero__panel" aria-label="Текущий фокус">
-          <div class="panel__top">
-            <span>portfolio.status</span>
-            <strong>active</strong>
-          </div>
-          <div class="signal">
-            <span style="--value: 88%"></span>
-            <span style="--value: 74%"></span>
-            <span style="--value: 93%"></span>
+        <aside class="hero__panel" aria-label="Текущий фокус портфолио">
+          <div class="terminal">
+            <div class="terminal__bar">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="terminal__body">
+              <p><b>focus</b> flagship projects</p>
+              <p><b>mode</b> junior-ready packaging</p>
+              <p><b>status</b> public profile cleaned</p>
+            </div>
           </div>
           <dl class="metrics">
             <div>
               <dt>3</dt>
-              <dd>flagship projects</dd>
+              <dd>флагманских проекта</dd>
+            </div>
+            <div>
+              <dt>47</dt>
+              <dd>пройденных backend/EDO тестов</dd>
             </div>
             <div>
               <dt>5</dt>
-              <dd>clean public repos</dd>
-            </div>
-            <div>
-              <dt>0</dt>
-              <dd>private noise exposed</dd>
+              <dd>публичных репозиториев без шума</dd>
             </div>
           </dl>
-          <div class="code-lines">
-            <span>workflow.approve()</span>
-            <span>android.room.join()</span>
-            <span>meteor.spawn()</span>
-          </div>
+        </aside>
+      </section>
+
+      <section class="proof section" aria-label="Короткие факты">
+        <div>
+          <span>Android</span>
+          <strong>Expo 54 + React Native 0.81</strong>
+          <p>Мобильный UX, релизы APK, безопасная работа с источниками видео.</p>
+        </div>
+        <div>
+          <span>Backend</span>
+          <strong>Laravel 12 / Laravel 10</strong>
+          <p>API, авторизация, роли, документы, SQL-модели и тесты.</p>
+        </div>
+        <div>
+          <span>Game logic</span>
+          <strong>Forge 1.21 + Java</strong>
+          <p>World/player/server events, кастомная entity, пакеты, частицы и звук.</p>
         </div>
       </section>
 
       <section id="projects" class="section">
         <div class="section__head">
           <p class="eyebrow">Flagship work</p>
-          <h2>Три проекта, которые раскрывают разные стороны разработки.</h2>
+          <h2>Проекты с разной логикой, интерфейсами и техническими решениями.</h2>
         </div>
 
         <div class="projects">
-          <a class="project" href="https://github.com/SemGAA/Program_kinp#readme">
-            <img src="https://opengraph.githubassets.com/semgaa-portfolio-cinema/SemGAA/Program_kinp" alt="Cinema Notes GitHub preview" />
-            <div>
+          <article class="project project--wide">
+            <a class="project__media" href="https://github.com/SemGAA/Program_kinp#readme">
+              <img src="./assets/cinema-notes-banner.png" alt="Cinema Notes Android project preview" />
+            </a>
+            <div class="project__body">
               <span>Android / Fullstack</span>
               <h3>Cinema Notes</h3>
-              <p>Приложение для совместного просмотра, заметок, друзей и чата рядом с видео.</p>
+              <p>
+                Приложение для совместного просмотра, комнат, профилей друзей и заметок
+                по фильмам, сериалам и аниме.
+              </p>
+              <ul>
+                <li>Мой вклад: мобильная навигация, комнаты просмотра, профиль, заметки, релизный контур.</li>
+                <li>Результат: APK-релизы, GitHub Pages-страница, проверка lint/TypeScript и backend tests.</li>
+              </ul>
+              <div class="project__links">
+                <a href="https://github.com/SemGAA/Program_kinp#readme">README</a>
+                <a href="https://semgaa.github.io/Program_kinp/">Страница проекта</a>
+                <a href="https://github.com/SemGAA/Program_kinp/releases">Релизы</a>
+              </div>
             </div>
-          </a>
+          </article>
 
-          <a class="project" href="https://github.com/SemGAA/edo-portal#readme">
-            <img src="https://opengraph.githubassets.com/semgaa-portfolio-edo/SemGAA/edo-portal" alt="EDO Portal GitHub preview" />
-            <div>
+          <article class="project">
+            <a class="project__media" href="https://github.com/SemGAA/edo-portal#readme">
+              <img src="./assets/edo-documents.png" alt="EDO Portal document journal screenshot" />
+            </a>
+            <div class="project__body">
               <span>Laravel / Livewire</span>
               <h3>EDO Portal</h3>
-              <p>Автоматизация документооборота: роли, маршруты согласования, БД и Livewire-журнал.</p>
+              <p>
+                Автоматизация бизнес-процессов, работа с ролями, БД и интерфейсом
+                на Livewire для журнала документов.
+              </p>
+              <ul>
+                <li>Мой вклад: упаковка проекта, Livewire-поиск, документация, приватность и тестовый контур.</li>
+                <li>Результат: чистый публичный репозиторий, 28 тестов проходят, реальные скриншоты UI.</li>
+              </ul>
+              <div class="project__links">
+                <a href="https://github.com/SemGAA/edo-portal#readme">README</a>
+                <a href="./assets/edo-documents.png">Скриншот</a>
+              </div>
             </div>
-          </a>
+          </article>
 
-          <a class="project" href="https://github.com/SemGAA/minecraft-meteor-mod#readme">
-            <img src="https://opengraph.githubassets.com/semgaa-portfolio-meteor/SemGAA/minecraft-meteor-mod" alt="Minecraft Meteor Mod GitHub preview" />
-            <div>
-              <span>Java / Forge</span>
+          <article class="project">
+            <a class="project__media" href="https://github.com/SemGAA/minecraft-meteor-mod#readme">
+              <img src="./assets/minecraft-meteor-preview.svg" alt="Minecraft Meteor Mod visual preview" />
+            </a>
+            <div class="project__body">
+              <span>Java / Minecraft Forge</span>
               <h3>Minecraft Meteor Mod</h3>
-              <p>Событийная логика, кастомная entity, сетевой flash packet, частицы и эффекты удара.</p>
+              <p>
+                Мод с логикой обработки событий: падение метеорита, MeteorEntity,
+                flash packet, частицы, звук, crater/remnant effects.
+              </p>
+              <ul>
+                <li>Мой вклад: игровая механика, обработчики world/player/server events и README для разработчика.</li>
+                <li>Результат: самостоятельный Forge/JDK repo, compileJava проходит, build artifacts скрыты.</li>
+              </ul>
+              <div class="project__links">
+                <a href="https://github.com/SemGAA/minecraft-meteor-mod#readme">README</a>
+                <a href="https://github.com/SemGAA/minecraft-meteor-mod">Код</a>
+              </div>
             </div>
-          </a>
+          </article>
+        </div>
+      </section>
+
+      <section id="details" class="section details">
+        <div class="section__head">
+          <p class="eyebrow">Technical depth</p>
+          <h2>Что можно обсуждать на собеседовании.</h2>
+        </div>
+
+        <div class="detail-grid">
+          <details open>
+            <summary>Cinema Notes architecture</summary>
+            <p>
+              Expo + React Native client, Laravel API, Cloudflare Worker as edge/runtime experiment,
+              release notes and APK distribution through GitHub Releases.
+            </p>
+          </details>
+          <details>
+            <summary>EDO Portal architecture</summary>
+            <p>
+              Laravel 10, Livewire 2, SQL database, document routes, departments, roles,
+              status filtering and server-rendered interactive tables.
+            </p>
+          </details>
+          <details>
+            <summary>Meteor Mod architecture</summary>
+            <p>
+              Minecraft Forge 1.21, Gradle, Java event subscribers, custom entity lifecycle,
+              network packet for flash feedback and world impact effects.
+            </p>
+          </details>
+          <details>
+            <summary>Development approach</summary>
+            <p>
+              Small iterations, README-first packaging, privacy scan before publishing,
+              lint/type/test checks and explicit separation of demo code from personal projects.
+            </p>
+          </details>
         </div>
       </section>
 
       <section id="stack" class="section stack">
         <div>
           <p class="eyebrow">Tech stack</p>
-          <h2>Практичный стек для web, mobile и игровых механик.</h2>
+          <h2>Практичный стек для web, mobile, SQL и игровых механик.</h2>
         </div>
         <div class="stack__list" aria-label="Технологии">
-          <span>PHP</span>
-          <span>Laravel</span>
-          <span>Livewire</span>
+          <span>PHP 8.1/8.2</span>
+          <span>Laravel 10/12</span>
+          <span>Livewire 2</span>
           <span>Java</span>
-          <span>Kotlin</span>
+          <span>Kotlin basics</span>
           <span>Android SDK</span>
+          <span>Expo 54</span>
+          <span>React Native 0.81</span>
           <span>JavaScript</span>
-          <span>React Native</span>
+          <span>TypeScript</span>
           <span>SQL</span>
           <span>Cloudflare Workers</span>
+          <span>Minecraft Forge 1.21</span>
         </div>
       </section>
 
-      <section class="section contact">
+      <section class="section qualities">
+        <p class="eyebrow">Soft skills</p>
+        <h2>Как я работаю.</h2>
+        <div class="qualities__list">
+          <p>Разбираю задачу до понятного сценария и фиксирую решения в документации.</p>
+          <p>Держу проект чистым: `.env`, build artifacts и личные файлы не должны попадать в public.</p>
+          <p>Умею доводить учебный прототип до состояния, которое можно показать рекрутеру и разработчику.</p>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact">
         <p class="eyebrow">Contact</p>
         <h2>Открыт к Junior / Intern задачам.</h2>
-        <p>Лучший способ посмотреть уровень прямо сейчас - открыть флагманские репозитории и пройтись по README, коду и тестам.</p>
-        <a class="button button--primary" href="https://github.com/SemGAA">GitHub профиль</a>
+        <p>
+          Сейчас публично указан GitHub. Почту, Telegram, VK и LinkedIn добавлю после подтверждения точных ссылок,
+          чтобы не публиковать неправильные контакты.
+        </p>
+        <div class="contact__links">
+          <a class="button button--primary" href="https://github.com/SemGAA">GitHub</a>
+          <a class="button" href="https://semgaa.github.io/Program_kinp/">Cinema Notes demo page</a>
+        </div>
       </section>
     </main>
 
