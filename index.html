@@ -6,7 +6,7 @@
     <title>SemGAA - Fullstack Developer & Android Enthusiast</title>
     <meta
       name="description"
-      content="Portfolio SemGAA: Android, Laravel, Livewire, Java, Minecraft Forge, SQL and business automation projects."
+      content="Portfolio SemGAA: Android, Laravel, Livewire, Java, Minecraft Forge/Fabric, SQL and business automation projects."
     />
     <link rel="stylesheet" href="./styles.css" />
   </head>
@@ -15,7 +15,7 @@
       <a class="brand" href="#top">SemGAA</a>
       <nav class="nav" aria-label="Основная навигация">
         <a href="#projects">Проекты</a>
-        <a href="#details">Детали</a>
+        <a href="#details">Реализация</a>
         <a href="#stack">Стек</a>
         <a href="#contact">Контакты</a>
       </nav>
@@ -24,11 +24,11 @@
     <main id="top">
       <section class="hero">
         <div class="hero__content">
-          <p class="eyebrow">Junior / Intern ready portfolio</p>
+          <p class="eyebrow">Junior / Intern портфолио</p>
           <h1>Fullstack Developer & Android Enthusiast</h1>
           <p class="lead">
             Специализируюсь на автоматизации процессов и нестандартных решениях:
-            от Android-приложений и Laravel-порталов до игровых механик на Forge.
+            от Android-приложений и Laravel-порталов до игровых механик на Forge/Fabric.
           </p>
           <div class="hero__actions">
             <a class="button button--primary" href="#projects">Смотреть проекты</a>
@@ -44,9 +44,9 @@
               <span></span>
             </div>
             <div class="terminal__body">
-              <p><b>focus</b> flagship projects</p>
-              <p><b>mode</b> junior-ready packaging</p>
-              <p><b>status</b> public profile cleaned</p>
+              <p><b>проекты</b> Android, EDO, Minecraft</p>
+              <p><b>стек</b> PHP, Java, JS, SQL</p>
+              <p><b>формат</b> код, README, релизы</p>
             </div>
           </div>
           <dl class="metrics">
@@ -78,22 +78,22 @@
           <p>API, авторизация, роли, документы, SQL-модели и тесты.</p>
         </div>
         <div>
-          <span>Game logic</span>
-          <strong>Forge 1.21 + Java</strong>
+          <span>Игровая логика</span>
+          <strong>Forge/Fabric + Java</strong>
           <p>World/player/server events, кастомная entity, пакеты, частицы и звук.</p>
         </div>
       </section>
 
       <section id="projects" class="section">
         <div class="section__head">
-          <p class="eyebrow">Flagship work</p>
+          <p class="eyebrow">Проекты</p>
           <h2>Проекты с разной логикой, интерфейсами и техническими решениями.</h2>
         </div>
 
         <div class="projects">
           <article class="project project--wide">
             <a class="project__media" href="https://github.com/SemGAA/Program_kinp#readme">
-              <img src="./assets/cinema-notes-banner.png" alt="Cinema Notes Android project preview" />
+              <span>Место для скриншота Cinema Notes</span>
             </a>
             <div class="project__body">
               <span>Android / Fullstack</span>
@@ -116,7 +116,7 @@
 
           <article class="project">
             <a class="project__media" href="https://github.com/SemGAA/edo-portal#readme">
-              <img src="./assets/edo-documents.png" alt="EDO Portal document journal screenshot" />
+              <span>Место для скриншота EDO Portal</span>
             </a>
             <div class="project__body">
               <span>Laravel / Livewire</span>
@@ -126,19 +126,19 @@
                 на Livewire для журнала документов.
               </p>
               <ul>
-                <li>Мой вклад: упаковка проекта, Livewire-поиск, документация, приватность и тестовый контур.</li>
-                <li>Результат: чистый публичный репозиторий, 28 тестов проходят, реальные скриншоты UI.</li>
+                <li>Мой вклад: Livewire-поиск, журнал документов, документация, приватность и тестовый контур.</li>
+                <li>Результат: 28 тестов проходят, структура проекта понятна для запуска и проверки.</li>
               </ul>
               <div class="project__links">
                 <a href="https://github.com/SemGAA/edo-portal#readme">README</a>
-                <a href="./assets/edo-documents.png">Скриншот</a>
+                <a href="https://github.com/SemGAA/edo-portal">Код</a>
               </div>
             </div>
           </article>
 
           <article class="project">
             <a class="project__media" href="https://github.com/SemGAA/minecraft-meteor-mod#readme">
-              <img src="./assets/minecraft-meteor-preview.svg" alt="Minecraft Meteor Mod visual preview" />
+              <span>Место для скриншота Meteor Mod</span>
             </a>
             <div class="project__body">
               <span>Java / Minecraft Forge</span>
@@ -149,7 +149,7 @@
               </p>
               <ul>
                 <li>Мой вклад: игровая механика, обработчики world/player/server events и README для разработчика.</li>
-                <li>Результат: самостоятельный Forge/JDK repo, compileJava проходит, build artifacts скрыты.</li>
+                <li>Результат: compileJava проходит, build artifacts скрыты, логика вынесена в отдельный repo.</li>
               </ul>
               <div class="project__links">
                 <a href="https://github.com/SemGAA/minecraft-meteor-mod#readme">README</a>
@@ -162,37 +162,37 @@
 
       <section id="details" class="section details">
         <div class="section__head">
-          <p class="eyebrow">Technical depth</p>
-          <h2>Что можно обсуждать на собеседовании.</h2>
+          <p class="eyebrow">Реализация</p>
+          <h2>Ключевые решения в проектах.</h2>
         </div>
 
         <div class="detail-grid">
           <details open>
-            <summary>Cinema Notes architecture</summary>
+            <summary>Архитектура Cinema Notes</summary>
             <p>
               Expo + React Native client, Laravel API, Cloudflare Worker as edge/runtime experiment,
               release notes and APK distribution through GitHub Releases.
             </p>
           </details>
           <details>
-            <summary>EDO Portal architecture</summary>
+            <summary>Архитектура EDO Portal</summary>
             <p>
               Laravel 10, Livewire 2, SQL database, document routes, departments, roles,
               status filtering and server-rendered interactive tables.
             </p>
           </details>
           <details>
-            <summary>Meteor Mod architecture</summary>
+            <summary>Архитектура Meteor Mod</summary>
             <p>
-              Minecraft Forge 1.21, Gradle, Java event subscribers, custom entity lifecycle,
+              Minecraft Forge 1.21, Gradle, Java event subscribers, custom entity lifecycle.
               network packet for flash feedback and world impact effects.
             </p>
           </details>
           <details>
-            <summary>Development approach</summary>
+            <summary>Как веду разработку</summary>
             <p>
-              Small iterations, README-first packaging, privacy scan before publishing,
-              lint/type/test checks and explicit separation of demo code from personal projects.
+              Иду маленькими шагами: сначала рабочий сценарий, потом проверка, README,
+              релизные заметки и защита личных файлов от публикации.
             </p>
           </details>
         </div>
@@ -200,7 +200,7 @@
 
       <section id="stack" class="section stack">
         <div>
-          <p class="eyebrow">Tech stack</p>
+          <p class="eyebrow">Стек</p>
           <h2>Практичный стек для web, mobile, SQL и игровых механик.</h2>
         </div>
         <div class="stack__list" aria-label="Технологии">
@@ -217,11 +217,12 @@
           <span>SQL</span>
           <span>Cloudflare Workers</span>
           <span>Minecraft Forge 1.21</span>
+          <span>Fabric</span>
         </div>
       </section>
 
       <section class="section qualities">
-        <p class="eyebrow">Soft skills</p>
+        <p class="eyebrow">Личные качества</p>
         <h2>Как я работаю.</h2>
         <div class="qualities__list">
           <p>Разбираю задачу до понятного сценария и фиксирую решения в документации.</p>
@@ -231,14 +232,16 @@
       </section>
 
       <section id="contact" class="section contact">
-        <p class="eyebrow">Contact</p>
+        <p class="eyebrow">Контакты</p>
         <h2>Открыт к Junior / Intern задачам.</h2>
         <p>
-          Сейчас публично указан GitHub. Почту, Telegram, VK и LinkedIn добавлю после подтверждения точных ссылок,
-          чтобы не публиковать неправильные контакты.
+          Можно написать по почте или в Telegram. VK указан как дополнительный контакт.
         </p>
         <div class="contact__links">
           <a class="button button--primary" href="https://github.com/SemGAA">GitHub</a>
+          <a class="button" href="mailto:pazukha.sema@mail.ru">Email</a>
+          <a class="button" href="https://t.me/HelpHelsing">Telegram</a>
+          <span class="contact__text">VK: Семён Андреев</span>
           <a class="button" href="https://semgaa.github.io/Program_kinp/">Cinema Notes demo page</a>
         </div>
       </section>
