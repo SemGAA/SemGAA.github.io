@@ -93,7 +93,11 @@
         <div class="projects">
           <article class="project project--wide">
             <a class="project__media" href="https://github.com/SemGAA/Program_kinp#readme">
-              <span>Место для скриншота Cinema Notes</span>
+              <div class="phone-strip" aria-label="Скриншоты Cinema Notes">
+                <img src="./assets/cinema-home.jpg" alt="Cinema Notes главный экран" loading="lazy" />
+                <img src="./assets/cinema-search.jpg" alt="Cinema Notes поиск" loading="lazy" />
+                <img src="./assets/cinema-room.jpg" alt="Cinema Notes комната просмотра" loading="lazy" />
+              </div>
             </a>
             <div class="project__body">
               <span>Android / Fullstack</span>
@@ -116,7 +120,7 @@
 
           <article class="project">
             <a class="project__media" href="https://github.com/SemGAA/edo-portal#readme">
-              <span>Место для скриншота EDO Portal</span>
+              <img class="project__image project__image--dashboard" src="./assets/edo-documents.png" alt="EDO Portal журнал документов" loading="lazy" />
             </a>
             <div class="project__body">
               <span>Laravel / Livewire</span>
@@ -138,7 +142,7 @@
 
           <article class="project">
             <a class="project__media" href="https://github.com/SemGAA/minecraft-meteor-mod#readme">
-              <span>Место для скриншота Meteor Mod</span>
+              <img class="project__image" src="./assets/meteor-mod.png" alt="Minecraft Meteor Mod метеорит" loading="lazy" />
             </a>
             <div class="project__body">
               <span>Java / Minecraft Forge</span>
@@ -170,22 +174,22 @@
           <details open>
             <summary>Архитектура Cinema Notes</summary>
             <p>
-              Expo + React Native client, Laravel API, Cloudflare Worker as edge/runtime experiment,
-              release notes and APK distribution through GitHub Releases.
+              Expo + React Native клиент, Laravel API, Cloudflare Worker для легкого edge/API варианта,
+              release notes и APK через GitHub Releases.
             </p>
           </details>
           <details>
             <summary>Архитектура EDO Portal</summary>
             <p>
-              Laravel 10, Livewire 2, SQL database, document routes, departments, roles,
-              status filtering and server-rendered interactive tables.
+              Laravel 10, Livewire 2, SQL-база, маршруты документов, отделы, роли,
+              фильтрация статусов и интерактивные таблицы на серверном рендеринге.
             </p>
           </details>
           <details>
             <summary>Архитектура Meteor Mod</summary>
             <p>
-              Minecraft Forge 1.21, Gradle, Java event subscribers, custom entity lifecycle.
-              network packet for flash feedback and world impact effects.
+              Minecraft Forge 1.21, Gradle, Java event subscribers, жизненный цикл кастомной entity,
+              сетевой пакет для flash-эффекта и изменения мира после удара.
             </p>
           </details>
           <details>
@@ -239,9 +243,9 @@
         </p>
         <div class="contact__links">
           <a class="button button--primary" href="https://github.com/SemGAA">GitHub</a>
-          <a class="button" href="mailto:pazukha.sema@mail.ru">Email</a>
-          <a class="button" href="https://t.me/HelpHelsing">Telegram</a>
-          <span class="contact__text">VK: Семён Андреев</span>
+          <a class="button" href="mailto:pazukha.sema%40mail.ru">pazukha.sema@mail.ru</a>
+          <a class="button" href="https://t.me/HelpHelsing" target="_blank" rel="noreferrer">Telegram</a>
+          <a class="button" href="https://vk.com/semyonat" target="_blank" rel="noreferrer">VK</a>
           <a class="button" href="https://semgaa.github.io/Program_kinp/">Cinema Notes demo page</a>
         </div>
       </section>
