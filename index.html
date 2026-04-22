@@ -17,6 +17,7 @@
         <a href="#projects">Проекты</a>
         <a href="#details">Реализация</a>
         <a href="#stack">Стек</a>
+        <a href="#paid-work">Услуги</a>
         <a href="#contact">Контакты</a>
       </nav>
     </header>
@@ -32,6 +33,7 @@
           </p>
           <div class="hero__actions">
             <a class="button button--primary" href="#projects">Смотреть проекты</a>
+            <a class="button" href="./assets/semgaa-resume.pdf">Скачать резюме PDF</a>
             <a class="button" href="https://github.com/SemGAA">GitHub профиль</a>
           </div>
         </div>
@@ -120,7 +122,11 @@
 
           <article class="project">
             <a class="project__media" href="https://github.com/SemGAA/edo-portal#readme">
-              <img class="project__image project__image--dashboard" src="./assets/edo-documents.png" alt="EDO Portal журнал документов" loading="lazy" />
+              <div class="screen-strip" aria-label="Скриншоты EDO Portal">
+                <img src="./assets/edo-login.png" alt="EDO Portal экран входа" loading="lazy" />
+                <img src="./assets/edo-documents.png" alt="EDO Portal журнал документов" loading="lazy" />
+                <img src="./assets/edo-document-card.png" alt="EDO Portal карточка документа" loading="lazy" />
+              </div>
             </a>
             <div class="project__body">
               <span>Laravel / Livewire</span>
@@ -225,6 +231,21 @@
         </div>
       </section>
 
+      <section id="paid-work" class="section paid-work">
+        <div>
+          <p class="eyebrow">Что могу делать</p>
+          <h2>Небольшие задачи, которые можно доверить уже сейчас.</h2>
+        </div>
+        <div class="paid-work__list">
+          <p>CRUD-страницы, админки и личные кабинеты.</p>
+          <p>Laravel API: маршруты, валидация, авторизация, роли.</p>
+          <p>Livewire-таблицы: поиск, фильтры, пагинация, действия.</p>
+          <p>SQL: таблицы, связи, миграции и seed-данные.</p>
+          <p>Android screens на Expo / React Native.</p>
+          <p>Bugfixes, README, GitHub Pages и страницы проектов.</p>
+        </div>
+      </section>
+
       <section class="section qualities">
         <p class="eyebrow">Личные качества</p>
         <h2>Как я работаю.</h2>
@@ -243,6 +264,7 @@
         </p>
         <div class="contact__links">
           <a class="button button--primary" href="https://github.com/SemGAA">GitHub</a>
+          <a class="button" href="./assets/semgaa-resume.pdf">Скачать резюме PDF</a>
           <a class="button" href="mailto:pazukha.sema%40mail.ru">pazukha.sema@mail.ru</a>
           <a class="button" href="https://t.me/HelpHelsing" target="_blank" rel="noreferrer">Telegram</a>
           <a class="button" href="https://vk.com/semyonat" target="_blank" rel="noreferrer">VK</a>

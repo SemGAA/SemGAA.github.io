@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Семён Андреев - Resume</title>
+    <style>
+      @page {
+        size: A4;
+        margin: 11mm;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        color: #111827;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 10.6px;
+        line-height: 1.35;
+      }
+
+      h1,
+      h2,
+      h3,
+      p {
+        margin: 0;
+      }
+
+      h1 {
+        font-size: 26px;
+        letter-spacing: 0;
+        line-height: 1;
+      }
+
+      h2 {
+        border-bottom: 1px solid #d1d5db;
+        color: #111827;
+        font-size: 12px;
+        letter-spacing: 0.08em;
+        margin: 13px 0 7px;
+        padding-bottom: 3px;
+        text-transform: uppercase;
+      }
+
+      h3 {
+        font-size: 12px;
+        margin-bottom: 3px;
+      }
+
+      a {
+        color: #0f766e;
+        text-decoration: none;
+      }
+
+      ul {
+        margin: 4px 0 0;
+        padding-left: 16px;
+      }
+
+      li {
+        margin: 1px 0;
+      }
+
+      .page {
+        min-height: 275mm;
+      }
+
+      .top {
+        align-items: start;
+        display: grid;
+        gap: 18px;
+        grid-template-columns: 1fr 0.95fr;
+      }
+
+      .title p {
+        color: #334155;
+        font-size: 13px;
+        margin-top: 5px;
+      }
+
+      .contacts {
+        color: #374151;
+        display: grid;
+        gap: 2px;
+        justify-items: end;
+      }
+
+      .summary {
+        color: #1f2937;
+        font-size: 11.2px;
+        margin-top: 10px;
+      }
+
+      .grid {
+        display: grid;
+        gap: 12px;
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .project {
+        break-inside: avoid;
+        margin-bottom: 8px;
+      }
+
+      .project__head {
+        align-items: baseline;
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+      }
+
+      .project__stack {
+        color: #64748b;
+        font-size: 10px;
+        white-space: nowrap;
+      }
+
+      .muted {
+        color: #4b5563;
+      }
+
+      .skills {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5px;
+      }
+
+      .skills span {
+        background: #f1f5f9;
+        border: 1px solid #dbe4ef;
+        border-radius: 4px;
+        padding: 3px 6px;
+      }
+
+      .work-list {
+        columns: 2;
+        column-gap: 22px;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="page">
+      <section class="top">
+        <div class="title">
+          <h1>Семён Андреев</h1>
+          <p>Junior Fullstack Developer / Android Enthusiast</p>
+          <p class="summary">
+            Remote only. Junior / Intern. Ожидание по зарплате: от 20 000 рублей.
+            Специализируюсь на автоматизации процессов и нестандартных решениях:
+            от Android-приложений и Laravel-порталов до игровых механик на Forge/Fabric.
+          </p>
+        </div>
+        <div class="contacts">
+          <div><strong>Portfolio:</strong> semgaa.github.io</div>
+          <div><strong>GitHub:</strong> github.com/SemGAA</div>
+          <div><strong>Email:</strong> pazukha.sema@mail.ru</div>
+          <div><strong>Telegram:</strong> @HelpHelsing</div>
+          <div><strong>VK:</strong> vk.com/semyonat</div>
+        </div>
+      </section>
+
+      <h2>Stack</h2>
+      <div class="skills">
+        <span>PHP 8.1/8.2</span>
+        <span>Laravel 10/12</span>
+        <span>Livewire 2</span>
+        <span>SQL</span>
+        <span>JavaScript</span>
+        <span>TypeScript</span>
+        <span>Expo 54</span>
+        <span>React Native 0.81</span>
+        <span>Android SDK</span>
+        <span>Java 21</span>
+        <span>Forge 1.21</span>
+        <span>Fabric basics</span>
+        <span>GitHub Pages</span>
+      </div>
+
+      <h2>Flagship Projects</h2>
+      <article class="project">
+        <div class="project__head">
+          <h3>Cinema Notes</h3>
+          <span class="project__stack">Expo, React Native, Laravel</span>
+        </div>
+        <p class="muted">Android-приложение для совместного просмотра, комнат, профилей друзей и заметок по фильмам, сериалам и аниме.</p>
+        <ul>
+          <li>Собрал mobile-first интерфейс: поиск, комнаты, профиль, заметки, друзья.</li>
+          <li>Подготовил APK-релизы, README, changelog и страницу проекта.</li>
+          <li>Сделал безопасную политику источников: легальные, открытые или личные потоки.</li>
+        </ul>
+      </article>
+
+      <article class="project">
+        <div class="project__head">
+          <h3>EDO Portal</h3>
+          <span class="project__stack">Laravel 10, Livewire 2, SQL</span>
+        </div>
+        <p class="muted">Система электронного документооборота: роли, маршруты согласования, audit log, журнал документов.</p>
+        <ul>
+          <li>Реализовал Livewire-журнал с поиском, фильтрами, пагинацией и карточкой документа.</li>
+          <li>Настроил демо-данные: роли, отделы, сотрудники, документы, статусы.</li>
+          <li>Починил локальный демо-вход и добавил понятный быстрый старт.</li>
+        </ul>
+      </article>
+
+      <article class="project">
+        <div class="project__head">
+          <h3>Minecraft Meteor Mod</h3>
+          <span class="project__stack">Java 21, Forge/Fabric, Gradle</span>
+        </div>
+        <p class="muted">Мод с глобальным событием падения метеорита, custom entity, packet, частицами, звуком и кратером.</p>
+        <ul>
+          <li>Настроил обработку player/server/world events для жизненного цикла события.</li>
+          <li>Добавил MeteorEntity, flash packet, траекторию, точку удара и эффекты после падения.</li>
+          <li>Подготовил отдельный чистый repo с README и исключением build artifacts.</li>
+        </ul>
+      </article>
+
+      <h2>What I can do for work</h2>
+      <ul class="work-list">
+        <li>CRUD-страницы, админки, личные кабинеты.</li>
+        <li>Laravel API: routes, validation, auth, roles.</li>
+        <li>Livewire-таблицы: поиск, фильтры, пагинация.</li>
+        <li>SQL: таблицы, связи, migrations, seeders.</li>
+        <li>Android screens на Expo / React Native.</li>
+        <li>Bugfixes в PHP, JS/TS, Laravel, Android UI.</li>
+        <li>GitHub Pages, README, releases, changelog.</li>
+        <li>Подготовка проекта к показу работодателю.</li>
+      </ul>
+
+      <h2>Work style</h2>
+      <div class="grid">
+        <p>Разбираю задачу до пользовательского сценария, затем собираю рабочий интерфейс и backend вокруг него.</p>
+        <p>Держу приватность: `.env`, ключи, build artifacts и личные файлы не должны попадать в public.</p>
+      </div>
+    </main>
+  </body>
+</html>

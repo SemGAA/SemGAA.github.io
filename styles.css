@@ -414,6 +414,30 @@ details p,
   width: 100%;
 }
 
+.screen-strip {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: 0.78fr 1fr 1fr;
+  height: 100%;
+  padding: 18px;
+  width: 100%;
+}
+
+.screen-strip img {
+  border: 1px solid rgba(148, 163, 184, 0.28);
+  border-radius: 8px;
+  display: block;
+  height: 100%;
+  min-height: 260px;
+  object-fit: cover;
+  object-position: left top;
+  width: 100%;
+}
+
+.screen-strip img:first-child {
+  object-position: center;
+}
+
 .project__body {
   display: flex;
   flex-direction: column;
@@ -485,8 +509,30 @@ details p {
 }
 
 .qualities,
+.paid-work,
 .contact {
   border-top: 1px solid var(--line);
+}
+
+.paid-work {
+  display: grid;
+  gap: 32px;
+  grid-template-columns: minmax(0, 0.78fr) minmax(0, 1.22fr);
+}
+
+.paid-work__list {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.paid-work__list p {
+  background: rgba(236, 254, 255, 0.06);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  color: var(--muted);
+  margin: 0;
+  padding: 18px;
 }
 
 .qualities__list {
@@ -554,6 +600,7 @@ details p {
   .projects,
   .proof,
   .stack,
+  .paid-work,
   .qualities__list,
   .detail-grid {
     grid-template-columns: 1fr;
@@ -612,6 +659,16 @@ details p {
   .phone-strip {
     gap: 8px;
     padding: 12px;
+  }
+
+  .screen-strip,
+  .paid-work__list {
+    grid-template-columns: 1fr;
+  }
+
+  .screen-strip img {
+    max-height: 300px;
+    min-height: 220px;
   }
 
   .metrics {
