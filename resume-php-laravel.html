@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Семён Пазуха - Junior PHP/Laravel Developer</title>
+    <style>
+      @page { size: A4; margin: 11mm; }
+      * { box-sizing: border-box; }
+      body { margin: 0; color: #111827; font-family: Arial, Helvetica, sans-serif; font-size: 10.6px; line-height: 1.34; }
+      h1, h2, h3, p { margin: 0; }
+      h1 { font-size: 25px; line-height: 1; }
+      h2 { border-bottom: 1px solid #d1d5db; font-size: 12px; letter-spacing: 0.08em; margin: 13px 0 7px; padding-bottom: 3px; text-transform: uppercase; }
+      h3 { font-size: 12px; margin-bottom: 3px; }
+      a { color: #0f766e; text-decoration: none; }
+      ul { margin: 4px 0 0; padding-left: 16px; }
+      li { margin: 1px 0; }
+      .page { min-height: 275mm; }
+      .top { display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 18px; align-items: start; }
+      .title p { color: #334155; font-size: 12.8px; margin-top: 5px; }
+      .contacts { color: #374151; display: grid; font-size: 9px; gap: 2px; justify-items: end; line-height: 1.2; text-align: right; }
+      .summary { color: #1f2937; font-size: 11px; margin-top: 10px; }
+      .skills { display: flex; flex-wrap: wrap; gap: 5px; }
+      .skills span { background: #f1f5f9; border: 1px solid #dbe4ef; border-radius: 4px; padding: 3px 6px; }
+      .project { break-inside: avoid; margin-bottom: 8px; }
+      .project__head { display: flex; justify-content: space-between; gap: 10px; align-items: baseline; }
+      .project__stack { color: #64748b; font-size: 10px; white-space: nowrap; }
+      .muted { color: #4b5563; }
+    </style>
+  </head>
+  <body>
+    <main class="page">
+      <section class="top">
+        <div class="title">
+          <h1>Семён Пазуха</h1>
+          <p>Junior PHP/Laravel Developer</p>
+          <p class="summary">
+            Remote only. Junior / Intern. Ожидание по зарплате: от 20 000 рублей.
+            Фокус на Laravel, Livewire, SQL, ролях, workflow и внутренних бизнес-системах.
+          </p>
+        </div>
+        <div class="contacts">
+          <div><strong>Portfolio:</strong> semgaa.github.io</div>
+          <div><strong>GitHub:</strong> github.com/SemGAA</div>
+          <div><strong>Email:</strong> pazukha.sema@mail.ru</div>
+          <div><strong>Telegram:</strong> @HelpHelsing</div>
+        </div>
+      </section>
+
+      <h2>Stack</h2>
+      <div class="skills">
+        <span>PHP 8.1/8.2</span>
+        <span>Laravel 10/12</span>
+        <span>Livewire 2</span>
+        <span>SQL</span>
+        <span>Blade</span>
+        <span>Tailwind CSS</span>
+        <span>Eloquent</span>
+        <span>Migrations</span>
+        <span>Seeders</span>
+        <span>GitHub</span>
+      </div>
+
+      <h2>Projects</h2>
+      <article class="project">
+        <div class="project__head">
+          <h3>EDO Portal</h3>
+          <span class="project__stack">Laravel 10, Livewire 2, SQL</span>
+        </div>
+        <p class="muted">Корпоративная система электронного документооборота с ролями, audit log и журналом документов.</p>
+        <ul>
+          <li>Собрал рабочий цикл документа: создание, согласование, возврат на доработку и архивирование.</li>
+          <li>Реализовал разграничение доступа по ролям и отделам, чтобы документы видели только нужные сотрудники и исполнители.</li>
+          <li>Добавил audit log и журнал документов с поиском, фильтрами, пагинацией и переходом в карточку документа.</li>
+          <li>Настроил структуру данных через migrations, seeders и связи Eloquent, подготовил demo-данные и рабочий вход для быстрой проверки проекта.</li>
+          <li>Проверил проект автотестами: 29 тестов проходят.</li>
+        </ul>
+      </article>
+
+      <article class="project">
+        <div class="project__head">
+          <h3>Cinema Notes</h3>
+          <span class="project__stack">Laravel API, Product backend</span>
+        </div>
+        <p class="muted">Fullstack-проект с backend-логикой для аккаунтов, комнат, заметок и продуктовых сценариев.</p>
+        <ul>
+          <li>Работал с backend-частью вокруг сущностей аккаунтов, комнат, заметок и продуктовой логики приложения.</li>
+          <li>Подготовил проект к публичной демонстрации: README, релизы, GitHub Pages и проверка приватности репозитория.</li>
+          <li>Разделил кодовую базу на клиент, backend, документацию и release flow, чтобы проект оставался читаемым и поддерживаемым.</li>
+        </ul>
+      </article>
+
+      <h2>Additional Experience</h2>
+      <article class="project">
+        <div class="project__head">
+          <h3>Minecraft Meteor Mod</h3>
+          <span class="project__stack">Java, Forge</span>
+        </div>
+        <p class="muted">Дополнительный Java-проект с событийной логикой, entity и клиент-серверным поведением.</p>
+        <ul>
+          <li>Реализовал игровое событие падения метеорита с обработчиками world/player/server events.</li>
+          <li>Подготовил README и релизную витрину проекта с простым сценарием установки через GitHub Releases.</li>
+        </ul>
+      </article>
+    </main>
+  </body>
+</html>
