@@ -7,24 +7,24 @@
     <style>
       @page { size: A4; margin: 11mm; }
       * { box-sizing: border-box; }
-      body { margin: 0; color: #111827; font-family: Arial, Helvetica, sans-serif; font-size: 10.6px; line-height: 1.34; }
+      body { margin: 0; color: #111827; font-family: Arial, Helvetica, sans-serif; font-size: 11.2px; line-height: 1.4; }
       h1, h2, h3, p { margin: 0; }
-      h1 { font-size: 25px; line-height: 1; }
-      h2 { border-bottom: 1px solid #d1d5db; font-size: 12px; letter-spacing: 0.08em; margin: 13px 0 7px; padding-bottom: 3px; text-transform: uppercase; }
-      h3 { font-size: 12px; margin-bottom: 3px; }
+      h1 { font-size: 28px; line-height: 1; }
+      h2 { border-bottom: 1px solid #d1d5db; font-size: 12.4px; letter-spacing: 0.08em; margin: 15px 0 8px; padding-bottom: 3px; text-transform: uppercase; }
+      h3 { font-size: 12.6px; margin-bottom: 4px; }
       a { color: #0f766e; text-decoration: none; }
-      ul { margin: 4px 0 0; padding-left: 16px; }
-      li { margin: 1px 0; }
+      ul { margin: 5px 0 0; padding-left: 16px; }
+      li { margin: 2px 0; }
       .page { min-height: 275mm; }
       .top { display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 18px; align-items: start; }
-      .title p { color: #334155; font-size: 12.8px; margin-top: 5px; }
-      .contacts { color: #374151; display: grid; font-size: 9px; gap: 2px; justify-items: end; line-height: 1.2; text-align: right; }
-      .summary { color: #1f2937; font-size: 11px; margin-top: 10px; }
+      .title p { color: #334155; font-size: 13.4px; margin-top: 5px; }
+      .contacts { color: #374151; display: grid; font-size: 9.4px; gap: 3px; justify-items: end; line-height: 1.25; text-align: right; }
+      .summary { color: #1f2937; font-size: 11.6px; margin-top: 11px; }
       .skills { display: flex; flex-wrap: wrap; gap: 5px; }
       .skills span { background: #f1f5f9; border: 1px solid #dbe4ef; border-radius: 4px; padding: 3px 6px; }
-      .project { break-inside: avoid; margin-bottom: 8px; }
+      .project { break-inside: avoid; margin-bottom: 10px; }
       .project__head { display: flex; justify-content: space-between; gap: 10px; align-items: baseline; }
-      .project__stack { color: #64748b; font-size: 10px; white-space: nowrap; }
+      .project__stack { color: #64748b; font-size: 10.4px; white-space: nowrap; }
       .muted { color: #4b5563; }
     </style>
   </head>
@@ -35,21 +35,21 @@
           <h1>Семён Пазуха</h1>
           <p>Junior PHP/Laravel Developer</p>
           <p class="summary">
-            Remote only. Junior / Intern. Ожидание по зарплате: от 20 000 рублей.
-            Усть-Катав, Россия. Выпускник специальности «Информационные системы». Фокус на Laravel, Livewire, SQL, ролях, workflow и внутренних бизнес-системах.
+            Ищу удалённую Junior / Intern позицию. Ожидаемый доход - от 20 000 рублей.
+            Усть-Катав, Россия. Выпускник специальности «Информационные системы». Фокус на Laravel, Livewire, SQL, ролях, маршрутах согласования и внутренних бизнес-системах.
           </p>
         </div>
         <div class="contacts">
-          <div><strong>Portfolio:</strong> semgaa.github.io</div>
+          <div><strong>Портфолио:</strong> semgaa.github.io</div>
           <div><strong>GitHub:</strong> github.com/SemGAA</div>
-          <div><strong>Email:</strong> pazukha.sema@mail.ru</div>
+          <div><strong>Почта:</strong> pazukha.sema@mail.ru</div>
           <div><strong>Telegram:</strong> @HelpHelsing</div>
-          <div><strong>Location:</strong> Ust-Katav, Russia</div>
-          <div><strong>DOB:</strong> 05.12.2006, 19 y.o.</div>
+          <div><strong>Город:</strong> Усть-Катав, Россия</div>
+          <div><strong>Дата рождения:</strong> 05.12.2006</div>
         </div>
       </section>
 
-      <h2>Education</h2>
+      <h2>Образование</h2>
       <article class="project">
         <div class="project__head">
           <h3>УКИТТ</h3>
@@ -58,7 +58,7 @@
         <p class="muted">2022-2026. Среднее профессиональное образование. Планирую продолжить обучение в УУНИТ по направлению программирования.</p>
       </article>
 
-      <h2>Stack</h2>
+      <h2>Стек</h2>
       <div class="skills">
         <span>PHP 8.1/8.2</span>
         <span>Laravel 10/12</span>
@@ -70,21 +70,31 @@
         <span>Migrations</span>
         <span>Seeders</span>
         <span>GitHub</span>
-        <span>English docs</span>
+        <span>Техническая документация</span>
       </div>
 
-      <h2>Projects</h2>
+      <h2>Практика</h2>
+      <article class="project">
+        <ul>
+          <li>Проектирую сущности, роли, статусы и связи в БД под прикладные сценарии.</li>
+          <li>Собираю формы, таблицы, фильтры, пагинацию и карточки записей на Laravel / Livewire.</li>
+          <li>Подготавливаю демонстрационный доступ, seeders и README, чтобы проект можно было быстро проверить.</li>
+          <li>Проверяю проект тестами и не публикую `.env`, сборочные артефакты и личные данные.</li>
+        </ul>
+      </article>
+
+      <h2>Проекты</h2>
       <article class="project">
         <div class="project__head">
           <h3>EDO Portal</h3>
           <span class="project__stack">Laravel 10, Livewire 2, SQL</span>
         </div>
-        <p class="muted">Корпоративная система электронного документооборота с ролями, audit log и журналом документов.</p>
+        <p class="muted">Корпоративная система электронного документооборота с ролями, журналом действий и журналом документов.</p>
         <ul>
-          <li>Собрал рабочий цикл документа: создание, согласование, возврат на доработку и архивирование.</li>
+          <li>Спроектировал рабочий цикл документа: создание, согласование, возврат на доработку и архивирование.</li>
           <li>Реализовал разграничение доступа по ролям и отделам, чтобы документы видели только нужные сотрудники и исполнители.</li>
-          <li>Добавил audit log и журнал документов с поиском, фильтрами, пагинацией и переходом в карточку документа.</li>
-          <li>Настроил структуру данных через migrations, seeders и связи Eloquent, подготовил demo-данные и рабочий вход для быстрой проверки проекта.</li>
+          <li>Добавил журнал действий и журнал документов с поиском, фильтрами, пагинацией и переходом в карточку документа.</li>
+          <li>Настроил структуру данных через migrations, seeders и связи Eloquent, подготовил демонстрационные данные и рабочий вход для быстрой проверки проекта.</li>
           <li>Проверил проект автотестами: 29 тестов проходят.</li>
         </ul>
       </article>
@@ -92,32 +102,41 @@
       <article class="project">
         <div class="project__head">
           <h3>Cinema Notes</h3>
-          <span class="project__stack">Laravel API, Product backend</span>
+          <span class="project__stack">Laravel API, серверная логика</span>
         </div>
-        <p class="muted">Fullstack-проект с backend-логикой для аккаунтов, комнат, заметок и продуктовых сценариев.</p>
+        <p class="muted">Мобильный проект с собственной серверной логикой для аккаунтов, комнат, заметок и продуктовых сценариев.</p>
         <ul>
-          <li>Работал с backend-частью вокруг сущностей аккаунтов, комнат, заметок и продуктовой логики приложения.</li>
-          <li>Подготовил проект к публичной демонстрации: README, релизы, GitHub Pages и проверка приватности репозитория.</li>
-          <li>Разделил кодовую базу на клиент, backend, документацию и release flow, чтобы проект оставался читаемым и поддерживаемым.</li>
+          <li>Работал с серверной частью вокруг сущностей аккаунтов, комнат, заметок и продуктовой логики приложения.</li>
+          <li>Подготовил проект к публичной демонстрации: README, релизы, GitHub Pages и проверку приватности репозитория.</li>
+          <li>Разделил кодовую базу на клиент, серверную часть, документацию и релизный контур, чтобы проект оставался читаемым и поддерживаемым.</li>
         </ul>
       </article>
 
-      <h2>Additional Experience</h2>
+      <h2>На старте</h2>
+      <article class="project">
+        <ul>
+          <li>Доработка внутренних Laravel-систем: формы, таблицы, фильтры, роли и статусы.</li>
+          <li>Поддержка CRUD-сценариев, маршрутов согласования, журналов действий и карточек сущностей.</li>
+          <li>Подготовка тестовых данных, README и безопасной публикации проекта без личных файлов и секретов.</li>
+        </ul>
+      </article>
+
+      <h2>Дополнительный опыт</h2>
       <article class="project">
         <div class="project__head">
           <h3>Minecraft Meteor Mod</h3>
           <span class="project__stack">Java, Forge</span>
         </div>
-        <p class="muted">Дополнительный Java-проект с событийной логикой, entity и клиент-серверным поведением.</p>
+        <p class="muted">Дополнительный Java-проект с событийной логикой, сущностью метеорита и клиент-серверным поведением.</p>
         <ul>
           <li>Реализовал игровое событие падения метеорита с обработчиками world/player/server events.</li>
           <li>Подготовил README и релизную витрину проекта с простым сценарием установки через GitHub Releases.</li>
         </ul>
       </article>
 
-      <h2>Status</h2>
+      <h2>Дополнительно</h2>
       <article class="project">
-        <p class="muted">Коммерческого опыта пока нет, потому что завершаю обучение. Английский - читаю техническую документацию со словарем. Основной практический опыт - учебные и pet-проекты, доведённые до demo, README, тестов, релизов и публичной проверки.</p>
+        <p class="muted">Коммерческого опыта пока нет, потому что завершаю обучение. Английский - чтение технической документации и спецификаций с использованием словаря. Основной практический опыт - учебные и pet-проекты, доведённые до рабочего сценария, документации, тестов и релизов.</p>
       </article>
     </main>
   </body>

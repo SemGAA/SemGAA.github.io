@@ -7,24 +7,24 @@
     <style>
       @page { size: A4; margin: 11mm; }
       * { box-sizing: border-box; }
-      body { margin: 0; color: #111827; font-family: Arial, Helvetica, sans-serif; font-size: 10.6px; line-height: 1.34; }
+      body { margin: 0; color: #111827; font-family: Arial, Helvetica, sans-serif; font-size: 11.2px; line-height: 1.4; }
       h1, h2, h3, p { margin: 0; }
-      h1 { font-size: 25px; line-height: 1; }
-      h2 { border-bottom: 1px solid #d1d5db; font-size: 12px; letter-spacing: 0.08em; margin: 13px 0 7px; padding-bottom: 3px; text-transform: uppercase; }
-      h3 { font-size: 12px; margin-bottom: 3px; }
+      h1 { font-size: 28px; line-height: 1; }
+      h2 { border-bottom: 1px solid #d1d5db; font-size: 12.4px; letter-spacing: 0.08em; margin: 15px 0 8px; padding-bottom: 3px; text-transform: uppercase; }
+      h3 { font-size: 12.6px; margin-bottom: 4px; }
       a { color: #0f766e; text-decoration: none; }
-      ul { margin: 4px 0 0; padding-left: 16px; }
-      li { margin: 1px 0; }
+      ul { margin: 5px 0 0; padding-left: 16px; }
+      li { margin: 2px 0; }
       .page { min-height: 275mm; }
       .top { display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 18px; align-items: start; }
-      .title p { color: #334155; font-size: 12.8px; margin-top: 5px; }
-      .contacts { color: #374151; display: grid; font-size: 9px; gap: 2px; justify-items: end; line-height: 1.2; text-align: right; }
-      .summary { color: #1f2937; font-size: 11px; margin-top: 10px; }
+      .title p { color: #334155; font-size: 13.4px; margin-top: 5px; }
+      .contacts { color: #374151; display: grid; font-size: 9.4px; gap: 3px; justify-items: end; line-height: 1.25; text-align: right; }
+      .summary { color: #1f2937; font-size: 11.6px; margin-top: 11px; }
       .skills { display: flex; flex-wrap: wrap; gap: 5px; }
       .skills span { background: #f1f5f9; border: 1px solid #dbe4ef; border-radius: 4px; padding: 3px 6px; }
-      .project { break-inside: avoid; margin-bottom: 8px; }
+      .project { break-inside: avoid; margin-bottom: 10px; }
       .project__head { display: flex; justify-content: space-between; gap: 10px; align-items: baseline; }
-      .project__stack { color: #64748b; font-size: 10px; white-space: nowrap; }
+      .project__stack { color: #64748b; font-size: 10.4px; white-space: nowrap; }
       .muted { color: #4b5563; }
     </style>
   </head>
@@ -35,21 +35,21 @@
           <h1>Семён Пазуха</h1>
           <p>Junior Mobile Developer</p>
           <p class="summary">
-            Remote only. Junior / Intern. Ожидание по зарплате: от 20 000 рублей.
-            Усть-Катав, Россия. Выпускник специальности «Информационные системы». Фокус на Android UI, React Native / Expo, продуктовых мобильных сценариях и аккуратной упаковке проекта в demo и release.
+            Ищу удалённую Junior / Intern позицию. Ожидаемый доход - от 20 000 рублей.
+            Усть-Катав, Россия. Выпускник специальности «Информационные системы». Фокус на Android UI, React Native / Expo, прикладных мобильных сценариях и аккуратной публичной упаковке проекта.
           </p>
         </div>
         <div class="contacts">
-          <div><strong>Portfolio:</strong> semgaa.github.io</div>
+          <div><strong>Портфолио:</strong> semgaa.github.io</div>
           <div><strong>GitHub:</strong> github.com/SemGAA</div>
-          <div><strong>Email:</strong> pazukha.sema@mail.ru</div>
+          <div><strong>Почта:</strong> pazukha.sema@mail.ru</div>
           <div><strong>Telegram:</strong> @HelpHelsing</div>
-          <div><strong>Location:</strong> Ust-Katav, Russia</div>
-          <div><strong>DOB:</strong> 05.12.2006, 19 y.o.</div>
+          <div><strong>Город:</strong> Усть-Катав, Россия</div>
+          <div><strong>Дата рождения:</strong> 05.12.2006</div>
         </div>
       </section>
 
-      <h2>Education</h2>
+      <h2>Образование</h2>
       <article class="project">
         <div class="project__head">
           <h3>УКИТТ</h3>
@@ -58,7 +58,7 @@
         <p class="muted">2022-2026. Среднее профессиональное образование. Планирую продолжить обучение в УУНИТ по направлению программирования.</p>
       </article>
 
-      <h2>Stack</h2>
+      <h2>Стек</h2>
       <div class="skills">
         <span>React Native 0.81</span>
         <span>Expo 54</span>
@@ -69,10 +69,20 @@
         <span>REST API</span>
         <span>GitHub Releases</span>
         <span>GitHub Pages</span>
-        <span>English docs</span>
+        <span>Техническая документация</span>
       </div>
 
-      <h2>Projects</h2>
+      <h2>Практика</h2>
+      <article class="project">
+        <ul>
+          <li>Собираю экраны, навигацию, формы и списки под реальные пользовательские сценарии.</li>
+          <li>Настраиваю safe area, пустые состояния, ошибки и связку клиента с API.</li>
+          <li>Подготавливаю проект к демонстрации: релизы, README, историю изменений и страницу проекта.</li>
+          <li>Проверяю клиентскую часть через lint и TypeScript, слежу за приватностью репозитория.</li>
+        </ul>
+      </article>
+
+      <h2>Проекты</h2>
       <article class="project">
         <div class="project__head">
           <h3>Cinema Notes</h3>
@@ -80,27 +90,36 @@
         </div>
         <p class="muted">Android-приложение для совместного просмотра, комнат, профилей друзей и заметок по фильмам, сериалам и аниме.</p>
         <ul>
-          <li>Собрал mobile-first интерфейс на Expo Router: главная, поиск, комнаты, заметки, друзья и профиль.</li>
+          <li>Собрал мобильный интерфейс на Expo Router: главная, поиск, комнаты, заметки, друзья и профиль.</li>
           <li>Реализовал Android-навигацию, safe area, формы и списки под обычные пользовательские сценарии.</li>
-          <li>Сохранил рядом с UI продуктовую логику: комнаты просмотра, заметки, друзья и связанный backend flow.</li>
-          <li>Подготовил публичную упаковку проекта: APK-релизы, README, changelog и страницу проекта.</li>
-          <li>Проверил клиентскую часть через lint и TypeScript check.</li>
+          <li>Сохранил рядом с интерфейсом продуктовую логику: комнаты просмотра, заметки, друзья и связанную серверную часть.</li>
+          <li>Подготовил публичную упаковку проекта: APK-релизы, README, историю изменений и страницу проекта.</li>
+          <li>Проверил клиентскую часть через lint и проверку TypeScript.</li>
         </ul>
       </article>
 
       <article class="project">
         <div class="project__head">
           <h3>EDO Portal</h3>
-          <span class="project__stack">Fullstack background</span>
+          <span class="project__stack">Серверная практика</span>
         </div>
-        <p class="muted">Дополнительный fullstack-проект, показывающий понимание данных, ролей, SQL-структур и серверной логики.</p>
+        <p class="muted">Дополнительный серверный проект, показывающий понимание данных, ролей, SQL-структур и бизнес-логики.</p>
         <ul>
-          <li>Работал с маршрутами документов, ролями, маршрутами согласования и demo-данными.</li>
+          <li>Работал с маршрутами документов, ролями, маршрутами согласования и демонстрационными данными.</li>
           <li>Подготовил проект к быстрой демонстрации: рабочий вход, тестовые данные и стабильный сценарий просмотра.</li>
         </ul>
       </article>
 
-      <h2>Additional Experience</h2>
+      <h2>На старте</h2>
+      <article class="project">
+        <ul>
+          <li>Доработка экранов, навигации, форм, списков и состояний интерфейса в Android-приложении.</li>
+          <li>Подключение клиента к REST API, обработка пустых состояний, ошибок и базовых пользовательских сценариев.</li>
+          <li>Подготовка APK, истории изменений, README и проектной страницы для демонстрации и тестирования.</li>
+        </ul>
+      </article>
+
+      <h2>Дополнительный опыт</h2>
       <article class="project">
         <div class="project__head">
           <h3>Minecraft Meteor Mod</h3>
@@ -112,9 +131,9 @@
         </ul>
       </article>
 
-      <h2>Status</h2>
+      <h2>Дополнительно</h2>
       <article class="project">
-        <p class="muted">Коммерческого опыта пока нет, потому что завершаю обучение. Английский - читаю техническую документацию со словарем. Основной практический опыт - учебные и pet-проекты, доведённые до demo, README, релизов и технической проверки.</p>
+        <p class="muted">Коммерческого опыта пока нет, потому что завершаю обучение. Английский - чтение технической документации и спецификаций с использованием словаря. Основной практический опыт - учебные и pet-проекты, доведённые до рабочего сценария, документации, релизов и технической проверки.</p>
       </article>
     </main>
   </body>
