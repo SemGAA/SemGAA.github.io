@@ -131,6 +131,13 @@ h3 {
   max-width: 680px;
 }
 
+.hero__roles {
+  color: #d8faff;
+  font-size: clamp(16px, 2vw, 19px);
+  font-weight: 800;
+  margin-bottom: 18px;
+}
+
 .hero__actions,
 .project__links,
 .contact__links {
@@ -269,6 +276,40 @@ h3 {
   gap: 16px;
   margin-bottom: 34px;
   max-width: 900px;
+}
+
+.intro-facts {
+  display: grid;
+  gap: 18px;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.intro-facts div {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 22px;
+}
+
+.intro-facts span {
+  color: var(--green);
+  display: block;
+  font-size: 12px;
+  font-weight: 850;
+  letter-spacing: 0.12em;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.intro-facts strong {
+  display: block;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.intro-facts p {
+  color: var(--muted);
+  line-height: 1.58;
 }
 
 .proof {
@@ -598,6 +639,7 @@ details p {
   .hero,
   .project--wide,
   .projects,
+  .intro-facts,
   .proof,
   .stack,
   .paid-work,
